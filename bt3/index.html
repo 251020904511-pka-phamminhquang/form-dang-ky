@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký sinh viên</title>
+</head>
+<body>
+    <h1>Form đăng ký sinh viên</h1>
+
+    <form action="#" method="post">
+        <p>
+            <label for="hoten">Họ tên:</label>
+            <input type="text" id="hoten" name="hoten" placeholder="Nhập họ tên của bạn" required>
+        </p>
+
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+        </p>
+
+        <p>
+            <label for="matkhau">Mật khẩu:</label>
+            <input type="password" id="matkhau" name="matkhau" placeholder="Nhập mật khẩu">
+        </p>
+
+        <fieldset>
+            <legend>Giới tính</legend>
+            <input type="radio" id="nam" name="gioitinh" value="nam">
+            <label for="nam">Nam</label>
+            <input type="radio" id="nu" name="gioitinh" value="nu">
+            <label for="nu">Nữ</label>
+            <input type="radio" id="khac" name="gioitinh" value="khac">
+            <label for="khac">Khác</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sở thích</legend>
+            <input type="checkbox" id="doc-sach" name="sothich" value="doc-sach">
+            <label for="doc-sach">Đọc sách</label>
+            <input type="checkbox" id="the-thao" name="sothich" value="the-thao">
+            <label for="the-thao">Thể thao</label>
+            <input type="checkbox" id="am-nhac" name="sothich" value="am-nhac">
+            <label for="am-nhac">Âm nhạc</label>
+            <input type="checkbox" id="game" name="sothich" value="game">
+            <label for="game">Chơi game</label>
+        </fieldset>
+
+        <p>
+            <label for="nganh">Ngành học:</label>
+            <select id="nganh" name="nganh">
+                <option value="cntt">CNTT</option>
+                <option value="kinhte">Kinh tế</option>
+                <option value="dientu">Điện tử</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="ghichu">Ghi chú:</label><br>
+            <textarea id="ghichu" name="ghichu" rows="4" cols="40" placeholder="Nhập ghi chú của bạn"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Gửi">
+        </p>
+    </form>
+</body>
+</html>
